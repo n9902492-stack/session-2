@@ -1,0 +1,71 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --font-sans: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  }
+
+  body {
+    font-family: var(--font-sans);
+    background-color: #120905;
+    color: #f5ded5;
+    overflow-x: hidden;
+  }
+}
+
+/* Glassmorphism and Solar Lighting */
+.glass-panel {
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(28px) saturate(160%);
+  -webkit-backdrop-filter: blur(28px) saturate(160%);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+}
+
+.glass-panel-elevated {
+  background: rgba(37, 25, 19, 0.72);
+  backdrop-filter: blur(32px) saturate(180%);
+  -webkit-backdrop-filter: blur(32px) saturate(180%);
+  border: 1px solid rgba(255, 182, 144, 0.18);
+  box-shadow: 0 20px 50px -10px rgba(249, 115, 22, 0.22), inset 0 1px 1px rgba(255, 255, 255, 0.25);
+}
+
+.glass-pill {
+  background: rgba(255, 255, 255, 0.07);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border: 1px solid rgba(255, 255, 255, 0.14);
+}
+
+.solar-glow {
+  box-shadow: 0 0 35px -5px rgba(249, 115, 22, 0.38);
+}
+
+.solar-glow-gold {
+  box-shadow: 0 0 28px -2px rgba(251, 191, 36, 0.45);
+}
+
+.solar-halo-bg {
+  background: radial-gradient(circle at 65% 15%, rgba(234, 88, 12, 0.22) 0%, rgba(42, 21, 8, 0.35) 45%, rgba(18, 9, 5, 0.98) 100%);
+}
+
+.solar-gradient-text {
+  background: linear-gradient(135deg, #ffffff 30%, #ffc640 70%, #f97316 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* Custom Scrollbars */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #160c07;
+}
+::-webkit-scrollbar-thumb {
+  background: #40322c;
+  border-radius: 9999px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #f97316;
+}

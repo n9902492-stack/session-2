@@ -1,0 +1,6 @@
+{
+  "name": "Solaris Meet",
+  "description": "Next-generation video conferencing platform with ultra-clarity audio, real-time collaboration, and instant room access.",
+  "requestFramePermissions": ["camera", "microphone", "display-capture"],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
